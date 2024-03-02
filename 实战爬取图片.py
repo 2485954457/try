@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import os
-
 def fire():
     page = 0
     for i in range(0, 120, 30):
@@ -44,6 +43,7 @@ def download_picture(pic_l):
                 print("下载失败：图片 %s 不存在" % pic_url)
         except Exception as e:
             print("下载图片时出错: %s" % str(e))
+
 
 if __name__ == '__main__':
     fire()
